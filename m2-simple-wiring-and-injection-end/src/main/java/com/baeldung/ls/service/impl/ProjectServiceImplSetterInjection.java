@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.baeldung.ls.persistence.model.Project;
 import com.baeldung.ls.persistence.repository.IProjectRepository;
 import com.baeldung.ls.service.IProjectService;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class ProjectServiceImplSetterInjection implements IProjectService {
 
@@ -23,7 +24,8 @@ public class ProjectServiceImplSetterInjection implements IProjectService {
     }
 
     @Autowired
-    public void setprojectRepository(IProjectRepository projectRepository) {
+    @Qualifier("projectRepositoryImpl2")
+    public void setProjectRepository(IProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
     }
 

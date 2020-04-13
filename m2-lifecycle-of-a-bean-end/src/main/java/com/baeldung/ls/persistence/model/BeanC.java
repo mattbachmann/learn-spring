@@ -11,11 +11,13 @@ public class BeanC {
 
     @PreDestroy
     public void preDestroy() {
-        log.info("@PreDestroy annotated method is called.");
+
+        log.info("BeanC @PreDestroy annotated method is called.");
     }
 
     public void destroy() {
-        log.info("Custom destroy method is called.");
+
+        log.info("BeanC Custom destroy method is called.");
     }
 
 }

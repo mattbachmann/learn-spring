@@ -11,6 +11,7 @@ public class BeanA {
 
     @PostConstruct
     public void post() {
+
         log.info("@PostConstruct annotated method is called.");
     }
 }

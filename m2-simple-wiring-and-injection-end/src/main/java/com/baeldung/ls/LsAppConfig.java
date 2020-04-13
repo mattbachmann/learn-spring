@@ -11,6 +11,7 @@ public class LsAppConfig {
 
     @Bean
     public IProjectService projectServiceImplSetterInjection() {
+
         return new ProjectServiceImplSetterInjection();
     }
 }

@@ -10,11 +10,13 @@ public class BeanB {
     private static Logger log = LoggerFactory.getLogger(BeanB.class);
 
     public void initialize() {
-        log.info("Custom initializer is called.");
+
+        log.info("BeanB Custom initializer is called.");
     }
 
     @PostConstruct
     public void postConstruct() {
-        log.info("@PostConstruct method is called.");
+
+        log.info("BeanB @PostConstruct method is called.");
     }
 }

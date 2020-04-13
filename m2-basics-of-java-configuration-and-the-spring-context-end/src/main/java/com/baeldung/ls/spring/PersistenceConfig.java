@@ -10,6 +10,7 @@ public class PersistenceConfig {
 
     @Bean
     public ProjectRepositoryImpl projectRepository() {
+
         return new ProjectRepositoryImpl();
     }
 
